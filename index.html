@@ -45,7 +45,134 @@
     <p>This is <sup>superscript</sup> text</p>
     <p>This is <tt>monospaced</tt> text</p>
     <p>This is <mark style="background:green">normal</mark> text</p>
-    <p>Fuck you </p>
+    
+    <h1><span style="background-color:tomato;">This is a span title</span></h1>
+    <h1><div style="background-color:cyan;">This is a div title</div></h1>
+
+    <p><span style="background-color:tomato;">This is a span sentence</span></p>
+    <div><span style="background-color:cyan;">This is a div sentence</span></div>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.<span style="background-color:tomato;"> Consectetur tempore saepe incidunt corporis ratione tempora quibusdam eum ullam numquam </span> delectus eligendi deserunt exercitationem optio reprehenderit, assumenda hic, cum alias tenetur.</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <div style="background-color:cyan;">Consectetur tempore saepe incidunt corporis ratione tempora quibusdam eum ullam numquam</div> delectus eligendi deserunt exercitationem optio reprehenderit, assumenda hic, cum alias tenetur.</p>
+
+    <h3>All List</h>
+    <!--Unordered list-->
+    <ul>
+        <li>Milk</li>
+        <li>Eggs</li>
+        <li>Pizza</li>
+        <ul>
+            <li>Tomato</li>
+            <li>Favor</li>
+            <li>Sugar</li>
+        </ul>
+    </ul>
+    <!--Ordered list-->
+    <h4>Steps to solve a problem</h4>
+    <ol>
+        <li>Define the problem</li>
+        <li>Design the solution</li>
+        <li>Implement the solution</li>
+        <li>Test the solution</li>
+    </ol>
+    <!--Description list-->
+    <h4>The Animal List</h4>
+    <dl style="background-color:purple;border:2px solid black;">
+        <dt>Lion</dt>
+        <dd>A large cat that lives in the wild</dd>
+        <dt>Panda</dt>
+        <dd>A bear that eats bamboo</dd>
+        <dt>Ain</dt>
+        <dd>The eye in Arabic</dd>
+    </dl>
+
+    <h3>Store Hours</h3>
+    <table border="3">
+        <tr align="center" style="background-color:lightblue">
+            <th width="100">Sunday</th>
+            <th width="100">Monday</th>
+            <th width="100">Tuesday</th>
+            <th width="100">Wednesday</th>
+            <th width="100">Thurday</th>
+            <th width="100">Friday</th>
+            <th>Saturday</th>
+        </tr>
+
+        <tr align="center">
+            <td>Closed</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>9-5</td>
+            <td>10-2</td>
+        </tr>
+    </table>
+
+    <br>
+    <a href="http://www.youtube.com" target="_blank">
+        <button style="font-size:25px;background-color:grey;color:lightblue;border-radius:25px;">Click  to Youtube</button>
+    </a>
+
+    <button onclick="doSomething()" style ="font-size:25px;background-color:grey;color:lightblue;border-radius:25px;">Click  me to change text</button>
+    <p id="greeting">Hello</p>
+    <script>
+        function doSomething(){
+            document.getElementById("greeting").innerHTML="Hello, welcome to my universe!";
+        }
+    </script>
+
+
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <label for="username">Username</label>
+        <input type="text" placeholder="Nhập tên cho bố" id="username" minlength="6" maxlength="15" required>
+        <br>
+        <label for="username">Password</label>
+        <input type="password" id="password" minlength="8" maxlength="15" required>
+        <br>
+
+        <label for="username">Email</label>
+        <input type="email" id="email" placeholder="SSS@gmail.com" minlength="8" maxlength="15" required>
+        <br>
+        <label for="username">Phone</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="8" maxlength="15" required>
+        <br>
+        <label for="username">Birthday</label>
+        <input type="date" id="bday"  minlength="8" maxlength="15" required><br>
+
+        <label for="username">Quantity</label>
+        <input type="number" id="quantity" min="1" max="100" required><br>
+        
+
+        <label for="title">Title</label>
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+
+        <label for="Phd.">Phd.</label>
+        <input type="radio" id="Phd." value="Phd." name="title"><br>
+
+
+        <label for="payment">Payment</label>
+        <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="paypal">paypal</option>
+        </select><br>
+
+        <label for="subcribe">Subcribe</label>
+        <input type="checkbox" id="subcribe"><br>
+
+        <label for="comment">Comment</label>
+        <textarea  id="comment" rows="3" cols="25"></textarea><br>
+
+        <label for="file">File</label>
+        <input type="file" id="file"><br>
+        <input type="reset"><br>
+        <input type="submit" >
+    </form>
 
 
 </body>
