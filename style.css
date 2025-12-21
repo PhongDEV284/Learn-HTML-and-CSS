@@ -1,0 +1,65 @@
+body{
+    background-color:black;
+}
+
+h1{
+    color:white;
+}
+
+p{
+    color:white;
+}
+/*
+#p1{
+    color:red;
+}
+#p2{
+    color:orange;
+}
+
+#p3{
+    color:yellow;
+}
+
+#p4{
+    color:green;
+}
+*/
+/*
+.odd{
+    color:red;
+}
+
+.even{
+    color:blue;
+}
+*/
+
+#p1{
+    color:tomato;
+}
+
+#p2{
+    color:rgb(102, 222, 255);
+}
+
+#p3{
+    color:#4aa44d;
+}
+
+#p4{
+    color:hsl(283, 100%, 64%)
+}
+
+h1{
+    font-family:verdana,arial;
+
+}
+
+p{
+    font-family:"courier new";
+    font-size:18px;/*px,em,%*/
+    font-weight:bold;
+    font-style: italic; /*Dùng google font*/
+}
+
