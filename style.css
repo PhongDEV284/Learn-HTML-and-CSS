@@ -129,3 +129,29 @@ body{
     margin-left:10px;
 }
 
+/*Phần overflow*/
+/*
+div{
+    border:2px solid;
+    height:75px;
+    overflow: clip;
+    /*overflow-clip-margin:13px;
+}*/
+
+div{
+
+    background-color: hsl(0,100%,71%);
+    width:100px;
+    height:100px;
+    display:block;
+}
+
+span{
+    background-color:rgb(102, 222, 255);
+    width: 100px;
+    height:100px;
+    display:block;
+}
+
+
+
