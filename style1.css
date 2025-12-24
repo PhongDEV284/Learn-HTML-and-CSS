@@ -1,0 +1,41 @@
+*{
+    box-sizing:border-box;
+}
+
+.container{
+    background-color:white;
+    height:100vh;
+
+}
+
+
+.box{
+    border:2px solid;
+    height: auto;
+    width:50%;
+    float:left;
+    padding:25px;
+    box-sizing:border-box;
+    text-align:center;
+    min-width:50%;
+}
+
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: hsl(188, 100%, 50%);
+    position:relative;;
+    top:100px;
+    left:100px;
+
+
+}
+
+#box2{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position:absolute;
+    top:50px;
+    left:50px;
+}
