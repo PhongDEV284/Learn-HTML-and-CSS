@@ -1,0 +1,19 @@
+body{
+    background-image:url(background.png);
+    background-repeat: no-repeat;
+    background-position:center;
+    background-attachment: fixed;
+    background-size:cover;
+}
+
+h1,p{
+    color:purple;
+}
+
+#container{
+    border:2px solid white;
+}
+
+#container~p{
+    background-color: yellow;
+}
