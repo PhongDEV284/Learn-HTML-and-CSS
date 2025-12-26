@@ -17,3 +17,22 @@ h1,p{
 #container~p{
     background-color: yellow;
 }
+
+button{
+    background-color:aqua;
+    border-radius:10px;
+}
+
+button:hover{
+    background-color: hotpink;
+    color: white;
+}
+
+button:active{
+    background-color: blue;
+    color: yellow;
+}
+
+button:link{
+    text-decoration: none;
+}
